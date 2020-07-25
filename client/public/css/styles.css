@@ -1,0 +1,220 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/loginBack.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.containerForm{
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    box-shadow: 0 0 15px 5px black;
+    border-radius: 4px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 100%;
+    color: white;
+}
+form .form-group{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerForm button{
+    width: 25%;
+    align-self: center;
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: 'Titillium Web', sans-serif;
+    border: none;
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+.containerForm button:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: 500ms;
+    transform: translateY(-3px) scale(1.02);
+}
+
+.containerForm input{
+    width: 60%;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0;
+    color: white;
+}
+.fa-users{
+    top: 15px;
+    left: 15px;
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+
+}
+
+h1{
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px;
+}
+
+h4{
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    font-weight: bold;
+    font-family: 'Alef', sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.no-account{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.no-account p{
+    text-decoration: none;
+    font-weight: normal;
+}
+.no-account a{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: lightblue;
+}
+.no-account a:visited{
+    color: lightblue;
+}
+.google_letter{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+.google_login{
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    width: 45%;
+    margin: 20px auto;
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 0 5px black;
+}
+.google_login:hover{
+    color: black;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: 500ms;
+    transform: translateY(-3px);
+}
+
+p{
+    margin: 0 2% 0 0;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.google_login:visited{
+    color: black;
+}
+
+.containerForm input:focus{
+    transform: scale(1.02);
+    transition: 450ms;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+    box-shadow: 0 0 5px lightgray;
+    color: white;
+    border-radius: 5px;
+}
+.home-button{
+    align-self: center;
+    color: white;
+    text-decoration: none;
+    margin: 10px auto;
+}
+.home-button:visited{
+    color: white;
+}
+.error-image{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+.error-message-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin-left: 1%;
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+.error-message-container form{
+    display: flex;
+}
+.home-error-button{
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: white;
+    padding: 2px 7px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.home-error-button:hover{
+    transform: scale(0.95);
+    transition: 350ms;
+    background-color: black;
+    color: white;
+}
+.home-error-button:visited{
+    color: none;
+}
+@media all and (max-width: 549px){
+    .containerForm{
+        width: 75%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        box-shadow: 0 0 15px 5px black;
+        border-radius: 4px;
+    }
+
+}
+@media all and (min-width: 550px) and (max-width:960px){
+    .containerForm{
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        box-shadow: 0 0 15px 5px black;
+        border-radius: 4px;
+    }
+
+}
